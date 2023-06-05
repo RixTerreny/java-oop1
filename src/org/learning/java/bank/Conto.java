@@ -9,7 +9,7 @@ public class Conto {
     private String accountantName;
     private double balance = 0;
 
-
+    //Generating instance functions
     private int generateBankAccountNumber(){
         return random.nextInt(1,1000);
     }
@@ -19,20 +19,22 @@ public class Conto {
         this.bankAccountNumber = generateBankAccountNumber();
     }
 
+    //User actions
     public void makeADeposit(double deposit){
         this.balance = this.balance + deposit;
-        System.out.println("Nuovo saldo: " + this.balance);
+        System.out.printf("Nuovo saldo: %.2f€ \n" , this.balance );
     }
 
     public void makeAWithdraw(double pay){
         if (pay>this.balance){
-            System.out.println("Saldo insufficiente");
+            System.out.println("Saldo insufficiente \n");
         }else{
             this.balance = this.balance-pay;
-            System.out.println("Nuovo saldo: " + this.balance);
+            System.out.printf("Nuovo saldo: %.2f€ \n" , this.balance );
         }
     }
 
+    //Getter and setter
     public int getBankAccountNumber(){
         return this.bankAccountNumber;
     }
