@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Prodotto {
     Random random = new Random();
-    private int code;
+    private final int code;
     private String name;
     private String description;
     private double price;
