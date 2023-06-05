@@ -47,16 +47,16 @@ public class Prodotto {
 
 
 
-    public void setName(){
-        this.name = "Fiat 500";
+    public void setName(String newName){
+        this.name = newName;
     }
 
-    public void setDescription(){
-        this.description = "Va piano";
+    public void setDescription(String newDescription){
+        this.description = newDescription;
     }
 
-    public void setPrice(){
-        this.price = 12200.34;
+    public void setPrice(double newPrice){
+        this.price = newPrice;
     }
 
 }

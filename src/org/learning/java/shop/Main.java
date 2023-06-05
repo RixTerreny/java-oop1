@@ -10,7 +10,7 @@ public class Main {
         System.out.println("Prezzo senza IVA: " + macchina1.getPrice());
         System.out.println("Nome esteso: " + macchina1.getExtendedName());
         System.out.println("Prezzo con IVA: " + macchina1.getFullPrice() + "\n");
-        macchina1.setName();
+        macchina1.setName("panda");
         System.out.println("Nome modificato con il setter: " + macchina1.getName());
     }
 }
